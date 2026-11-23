@@ -164,6 +164,33 @@ button { cursor: pointer; }
 .wallet-card > span { color: #687e84; font-size: 13px; }
 .wallet-card strong { color: #193e4c; font-size: 30px; }
 .wallet-card small { color: #819197; font-size: 11px; }
+.wallet-topup { display: flex; flex-direction: column; gap: 9px; padding: 22px 0; border-bottom: 1px solid #e8efed; }
+.wallet-topup > strong, .wallet-transactions h3 { margin: 0; color: #284653; font-size: 13px; }
+.wallet-topup label { color: #71858b; font-size: 11px; }
+.wallet-topup select { min-height: 42px; padding: 0 12px; border: 1px solid #dce7e5; border-radius: 9px; color: #244653; background: white; }
+.wallet-topup .panel-primary { margin-top: 0; }
+.wallet-amount-input { display: flex; align-items: center; min-height: 48px; padding: 0 13px; border: 1px solid #cbdedb; border-radius: 10px; color: #607a81; background: #fff; }
+.wallet-amount-input:focus-within { border-color: #098797; box-shadow: 0 0 0 3px rgba(9,135,151,.1); }
+.wallet-amount-input input { width: 100%; min-width: 0; border: 0; outline: 0; color: #193e4c; background: transparent; font-size: 17px; font-weight: 700; }
+.wallet-amount-input input::-webkit-inner-spin-button, .wallet-amount-input input::-webkit-outer-spin-button { margin: 0; appearance: none; }
+.wallet-input-hint { color: #839297; font-size: 10px; }
+.wallet-suggestions { display: flex; flex-wrap: wrap; gap: 7px; margin: 3px 0 7px; }
+.wallet-suggestions button { min-height: 33px; padding: 0 10px; border: 1px solid #dce7e5; border-radius: 18px; color: #42616b; background: white; font-size: 10px; }
+.wallet-suggestions button:hover, .wallet-suggestions button.selected { border-color: #078b8d; color: #087f82; background: #edf8f5; }
+.wallet-topup .panel-primary:disabled { cursor: not-allowed; opacity: .5; }
+.wallet-transactions { padding: 20px 0 8px; }
+.wallet-transactions h3 { margin-bottom: 12px; }
+.wallet-transaction { display: grid; grid-template-columns: 34px minmax(0, 1fr) auto; align-items: center; gap: 10px; padding: 12px 0; border-bottom: 1px solid #edf1ef; }
+.wallet-transaction-icon { display: grid; place-items: center; width: 32px; height: 32px; border-radius: 50%; color: #a35d4d; background: #fff1ed; }
+.wallet-transaction-icon.incoming { color: #138477; background: #e9f7f2; }
+.wallet-transaction-info { min-width: 0; display: flex; flex-direction: column; gap: 4px; }
+.wallet-transaction-info strong { overflow: hidden; color: #294b57; font-size: 11px; text-overflow: ellipsis; white-space: nowrap; }
+.wallet-transaction-info small { color: #839297; font-size: 9px; }
+.wallet-transaction > b { color: #a35d4d; font-size: 11px; white-space: nowrap; }
+.wallet-transaction > b.incoming { color: #138477; }
+.wallet-empty-history { color: #839297; font-size: 11px; line-height: 1.5; }
+.booking-error { padding: 10px 12px; border-radius: 9px; color: #9b493f; background: #fff2ef; font-size: 11px; line-height: 1.5; }
+.booking-error button { padding: 0; border: 0; color: #087f91; background: transparent; font-weight: 700; text-decoration: underline; }
 .avatar { display: grid; place-items: center; width: 35px; height: 35px; border-radius: 50%; color: #fff; background: #078ba2; font-weight: 750; }
 .hotel-section { max-width: 1180px; padding: 28px 28px 52px; margin: 0 auto; scroll-margin-top: 24px; }
 .hotel-section-heading { align-items: end; margin-bottom: 20px; }
