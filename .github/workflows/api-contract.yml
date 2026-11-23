@@ -1,0 +1,23 @@
+name: API contract
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+      - run: npm run typecheck
+      - run: npm run api:check
+        env:
+          HOTELS_OPENAPI_URL: ${{ vars.HOTELS_OPENAPI_URL }}
+          BOOKINGS_OPENAPI_URL: ${{ vars.BOOKINGS_OPENAPI_URL }}
+          PAYMENTS_OPENAPI_URL: ${{ vars.PAYMENTS_OPENAPI_URL }}

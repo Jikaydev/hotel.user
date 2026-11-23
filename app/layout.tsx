@@ -3,7 +3,7 @@ import type { Metadata, Viewport } from 'next'
 import './globals.css'
 
 export const metadata: Metadata = {
-  title: 'VP-OTA | Tìm khách sạn cho kỳ nghỉ của bạn',
+  title: 'VP-OTA',
   description: 'Khám phá và tìm khách sạn, resort phù hợp cho chuyến đi tiếp theo của bạn cùng VP-OTA.',
   generator: 'v0.app',
   icons: {
@@ -13,11 +13,11 @@ export const metadata: Metadata = {
         media: '(prefers-color-scheme: light)',
       },
       {
-        url: '/icon-dark-32x32.png',
+        url: '/logo.png',
         media: '(prefers-color-scheme: dark)',
       },
       {
-        url: '/icon.svg',
+        url: '/logo.png',
         type: 'image/svg+xml',
       },
     ],
