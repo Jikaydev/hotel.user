@@ -1,5 +1,5 @@
 export type Hotel = {
-  id: number
+  id: number | string
   name: string
   city: string
   detail: string
